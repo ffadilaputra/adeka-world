@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `common`,
-        path: `../common/src/assets/`,
+        path: `${__dirname}/src/common/assets/`,
       },
     },
     `gatsby-transformer-json`,
@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `../common/src/data/`,
+        path: `${__dirname}/src/common/data/`,
       },
     },
     `gatsby-transformer-sharp`,
